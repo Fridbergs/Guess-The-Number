@@ -36,7 +36,7 @@ startGame.addEventListener("click", function () {
   startGame.setAttribute("disabled", true);
   // Skicka händelsen till Google Analytics vid det första klicket
   gtag("event", "click", {
-    event_category: "Starta",
+    event_Linus: "Starta",
     event_label: "Startar spelet",
   });
 });
