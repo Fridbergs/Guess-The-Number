@@ -36,7 +36,8 @@ startGame.addEventListener("click", function () {
   startGame.setAttribute("disabled", true);
   // Skicka händelsen till Google Analytics vid det första klicket
   gtag("event", "click", {
-    Starta_Spelet: "Startar spelet",
+    event_category: "Starting game",
+    event_label: "Startar spelet",
   });
 });
 
