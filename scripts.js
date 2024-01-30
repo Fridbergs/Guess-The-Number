@@ -34,13 +34,10 @@ startGame.addEventListener("click", function () {
   console.log(theAnswer);
   //Metod setAtribute
   startGame.setAttribute("disabled", true);
-
-  startGame.addEventListener("click", function () {
-    // Exempel på att skicka ett händelse till Google Analytics
-    gtag("event", "click", {
-      event_category: "Header",
-      event_label: "Startar spelet",
-    });
+  // Skicka händelsen till Google Analytics vid det första klicket
+  gtag("event", "click", {
+    event_category: "Header",
+    event_label: "Startar spelet",
   });
 });
 
